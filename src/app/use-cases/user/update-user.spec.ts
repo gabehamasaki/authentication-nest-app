@@ -1,8 +1,8 @@
 import { makeUser } from '@test/factories/user-factory';
 import { InMemoryUserRepository } from '@test/in-memory/in-memory-user-repository';
-import { UpdateUser } from '../update-user';
-import { EmailAlreadyExists } from './../errors/email-already-exist';
-import { UserNotFound } from './../errors/user-not-found';
+import { EmailAlreadyExists } from '../errors/email-already-exist';
+import { UserNotFound } from '../errors/user-not-found';
+import { UpdateUser } from './update-user';
 describe('Update user', () => {
   it('should be able update a user', async () => {
     const inMemoryUserRepository = new InMemoryUserRepository();

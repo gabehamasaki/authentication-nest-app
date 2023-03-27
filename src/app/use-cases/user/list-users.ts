@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { User } from '@prisma/client';
-import { UserRepository } from './../repositories/user-repositories';
+import { UserRepository } from '../../repositories/user-repositories';
 
 interface ListUsersResponse {
   users: User[];

@@ -1,6 +1,6 @@
-import { CreateUser } from '@app/use-cases/create-user';
-import { ListUsers } from '@app/use-cases/list-users';
-import { UpdateUser } from '@app/use-cases/update-user';
+import { CreateUser } from '@app/use-cases/user/create-user';
+import { ListUsers } from '@app/use-cases/user/list-users';
+import { UpdateUser } from '@app/use-cases/user/update-user';
 import {
   Body,
   Controller,

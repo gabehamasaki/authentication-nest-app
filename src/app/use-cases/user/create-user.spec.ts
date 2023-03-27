@@ -1,7 +1,7 @@
 import { makeUser } from '@test/factories/user-factory';
 import { InMemoryUserRepository } from '@test/in-memory/in-memory-user-repository';
-import { CreateUser } from './../create-user';
-import { EmailAlreadyExists } from './../errors/email-already-exist';
+import { EmailAlreadyExists } from '../errors/email-already-exist';
+import { CreateUser } from './create-user';
 describe('Create user', () => {
   it('should be able create a user', async () => {
     const inMemoryUserRepository = new InMemoryUserRepository();

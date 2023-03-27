@@ -1,8 +1,8 @@
 import { User } from '@app/entities/User';
 import { Injectable } from '@nestjs/common';
 import { hash } from 'bcrypt';
-import { UserRepository } from './../repositories/user-repositories';
-import { EmailAlreadyExists } from './errors/email-already-exist';
+import { UserRepository } from '../../repositories/user-repositories';
+import { EmailAlreadyExists } from '../errors/email-already-exist';
 
 interface CreateUserRequest {
   name: string;
