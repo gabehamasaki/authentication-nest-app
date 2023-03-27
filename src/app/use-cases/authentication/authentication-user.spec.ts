@@ -31,7 +31,11 @@ describe('Authentication User', () => {
       password: '123456',
     });
 
-    expect(verify(token, process.env.PRIVATE_KEY)).toBeTruthy();
+    expect(
+      verify(token, process.env.PRIVATE_KEY, {
+        audience: process.env.API_URL,
+      }),
+    ).toBeTruthy();
     expect(
       await inMemoryTokenRepository.findById(refreshToken.id),
     ).toBeTruthy();
